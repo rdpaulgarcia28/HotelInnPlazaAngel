@@ -1,0 +1,189 @@
+header{}
+
+/************ MENU ************/
+.bar{
+    height: 90px;
+    background-color: rgb(189, 4, 4);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    background-color: rgb(189, 4, 4);
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo span{
+    font-size: 10px;
+    color: white;
+    padding: 0 3px;
+    border-left: white solid 2px;
+}
+.bar-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.conteiner-menu-items a{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.conteiner-menu-items a:hover{
+    border-bottom: white solid 1px;
+}
+
+/************ PORTADA IMAGEN ***********/
+.cover_page{
+    position: relative;
+    overflow: hidden;
+}
+.cover_page::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.405);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cover_page h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    /*color: rgba(189, 4, 4, 0.611);*/
+    font-size: 50px;
+    width: 40%;
+}
+.cover-page-reservation{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(189, 4, 4, 0.611);
+    top: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************* FORMULARIO RESERVACION FECHAS *****************/
+.formulario-reservation{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-reservation label{
+    color: white;
+    font-size:large;
+    font-family: 'Playfair Display', serif;
+}
+#titule-reservation{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.date-label{
+    width: 100%;
+}
+#check-in{
+    margin-bottom: 15px;
+    width: 100%;
+}
+#check-out{
+    margin-bottom: 15px;
+    width: 100%;
+}
+#adults{
+    width: 15%;
+    margin-right: 15px;
+}
+#kids{
+    width: 15%;
+}
+.conteiner-people{
+    width: 100%;
+    display: flex;
+}
+.amount-people{
+    margin-left: 5px;
+}
+
+#btn-buscar{
+    margin-top: 50px;
+    padding: 10px;
+    background-color:white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(189, 4, 4);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    transition: transform 500ms;
+}
+#btn-buscar:active{
+    transform: scale(.9);
+}
+@media(max-width:1200px){
+    .cover_page h1{
+        top: 10%;
+        left: 45%;
+        width: 50%;
+    }
+}
+@media(max-width:1024px){
+    .cover_page img{
+        max-width: none;
+        height: 700px;
+        object-position: center;
+        object-fit: contain;
+    }
+}
+@media(max-width:900px){
+    .cover_page h1{
+        top: 10%;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cover-page-reservation{
+        width: 80%;
+        height: 400px;
+        top: 40%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+@media(max-width:600px){
+    .cover_page h1{
+        top: 5%;
+    }
+    .cover-page-reservation{
+        height: 300px;
+        top: 45%;
+    }
+    #btn-buscar{
+        margin-top: 30px;
+    }
+    .formulario-reservation{
+        height: 90%;
+    }
+}
+@media(max-width:450px){
+    .cover-page-reservation{
+        height: 300px;
+        top: 45%;
+    }
+    .cover_page h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:340px){
+    .cover-page-reservation{
+        top: 55%;
+    }
+}

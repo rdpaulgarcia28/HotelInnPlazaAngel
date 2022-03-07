@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Inn Plaza del Angel</title>
+
+    <!-- CSS DOCUMENTS -->
+    <link rel="stylesheet" href="css/hotel_inn/bar.css">
+    <link rel="stylesheet" href="css/datos_hotel.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/cover_page.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <menu class="bar" id="inicio">
+            <div class="logo">
+                <span>Hotel</span>
+                <span>Inn</span>
+                <span>Plaza</span>
+                <span>Del</span>
+                <span>Angel</span>
+            </div>
+            <div class="bar-menu">
+                <nav class="conteiner-menu-items">
+                    <a href="#inicio">inicio</a>
+                    <a href="html/galeria.html">Galeria</a>
+                    <a href="html/habitaciones.html">Habitaciones</a>
+                    <a href="html/cocina.html">Cocina</a>
+                    <a href="html/eventos.html">Eventos</a>
+                    <a href="html/login.html">Login</a>
+                </nav>
+            </div>
+            <div class="panel-btn" id="btn-hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner-1"></span>
+                    <span class="hamburger-inner-2"></span>
+                    <span class="hamburger-inner-3"></span>
+                </span>
+            </div>
+            <aside class="panel" id="panel">
+                <nav class="menu">
+                    <a href="#inicio"id="btn-panel-1">inicio</a>
+                    <a href="html/galeria.html"id="btn-panel-2">Galeria</a>
+                    <a href="html/habitaciones.html"id="btn-panel-3">Habitaciones</a>
+                    <a href="html/cocina.html"id="btn-panel-4">Cocina</a>
+                    <a href="html/eventos.html" id="btn-panel-6">Eventos</a>
+                    <a href="html/login.html"id="btn-panel-7">Login</a>
+                </nav>
+            </aside>
+        </menu>
+        <section class="cover_page" id="inicio">
+            <img src="img/ciudad.jpg" alt="">
+            <div class="cover-page-reservation">
+                <form action="" class="formulario-reservation">
+                    <label for="" id="titule-reservation">Registra Tu Estancia</label>
+                    <label for="check-in" class="date-label">Dia De Entrada</label>
+                    <input type="date" name="check-in" id="check-in">
+                    <label for="check-out" class="date-label">Dia De Salida</label>
+                    <input type="date" name="check-out" id="check-out">
+                    <div class="conteiner-people">
+                        <label for="adults">Adultos</label>
+                        <input type="number" name="adults" id="adults" min="0" class="amount-people">
+                        <label for="kids">Niños</label>
+                        <input type="number" name="kids" id="kids" min="0" class="amount-people">
+                    </div>
+                    <input type="submit" value="BUSCAR" id="btn-buscar">
+                </form>
+            </div>
+            <h1>Pasa Un Tiempo Muy Agradable En Hotel Inn Plaza Del Angel</h1>
+        </section>
+    </header>
+    <main>
+        <section class="datos_hotel">
+            <div class="conteiner_datos_hotel">
+                <div class="datos_direcction">
+                    <span class="span_magin">Av. Benito Juárez 1309, Zona Centro, 31000 Chihuahua, Chih.</span>
+                    <span class="span_magin" style="font-weight: bold">614 335 2690</span>
+                    <span class="span_magin">Hola@hotelinnplazadelangel.com</span>
+                    <span class="conteiner_icons">
+                        <img src="img/png/facebook.png" alt="" class="icons">
+                        <img src="img/png/instagram.png" alt="" class="icons">
+                        <img src="img/png/twitter.png" alt="" class="icons">
+                        <img src="img/png/youtube.png" alt="" class="icons">
+                        <span></span>
+                        <a href="">Contactanos</a>
+                    </span>
+                    <span></span>
+                </div>
+                <div class="datos_subscribe">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

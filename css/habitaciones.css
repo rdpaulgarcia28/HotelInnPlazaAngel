@@ -1,0 +1,241 @@
+.habitaciones-conteiner{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.habitaciones-grid-conteiner{
+    display: grid;
+    grid-gap: 10px;
+    width: 80%;
+    grid-template-columns: 200px auto auto auto auto auto;
+    grid-template-rows: 260px 80px 260px 260px 260px ;
+}
+.habittaciones-grid-item1{
+    grid-column: 1 / 2;
+    background-color: rgb(189, 4, 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.habittaciones-grid-item1 span{
+    font-size: 20px;
+    color: white;
+    width: 70%;
+    text-align: center;
+}
+.habittaciones-grid-item2{
+    grid-column: 2 / 7;
+    background-image: url(../img/habitacion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.habittaciones-grid-item3{
+    grid-column: 1 / 7;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.habitacion a{
+    width: 30%;
+    height: 80%;
+    position: relative;
+}
+.habitacion a::before{
+    content: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.9));
+}
+.habitacion a img{
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.mas-info{
+    background-color: rgba(189, 4, 4, 0.755);
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    z-index: 3;
+    width: 80px;
+    height: 24px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: all 500ms ;
+}
+.habitacion a:hover > .mas-info{
+    opacity: 1;
+    bottom: 7px;
+}
+.habitacion span{
+    width: 45%;
+    height: 80%;
+}
+.habitacion span span{
+    font-size: 12px;
+    width: 100%;
+    height: 40%;
+}
+.habitacion span ul{
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.habitacion span ul li{
+    font-size: 12px;
+}
+.habitacion span div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    border-top: black solid 1px;
+}
+.habitacion-btn{
+    width: 20%;
+    height: 80%;
+}
+.habitacion div img{
+    width: 20px;
+    height: 20px;
+}
+.habitacion-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.precio-desde{
+    text-align: center;
+    font-size: 12px;
+    display: inline;
+    font-family: 'Playfair Display', serif;
+}
+.precio-habitacion{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.habitacion-btn a{
+    text-align: center;
+    width: 90px;
+    height: 22px;
+    margin-bottom: 20px;
+    background-color:rgb(189, 4, 4);
+    color: white;
+    text-decoration: none;
+}
+.habittaciones-grid-item4{
+    grid-column: 1 / 7;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.habittaciones-grid-item5{
+    grid-column: 1 / 7;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.room-titule{
+    position: absolute;
+    color:black;
+    bottom: 20%;
+    left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+.sub-titule{
+    position: absolute;
+    color: black;
+    bottom: 10%;
+    left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+.room-desde{
+    position: absolute;
+    color: black;
+    bottom: 20%;
+    right: 20%;
+    display: none;
+}
+.room-precio{
+    position: absolute;
+    color: black;
+    bottom: 5%;
+    right: 10%;
+    font-size: 30px;
+    display: none;
+}
+@media(max-width: 720px){
+    .habittaciones-grid-item1{
+        grid-column: 1 / 7;
+    }
+    .habittaciones-grid-item2{
+        display: none;
+    }
+    .habitacion a::before{
+        content: "";
+    }
+    .habitacion a{
+        width: 100%;
+        height: 80%;
+    }
+    .habitacion a img{
+        object-fit: cover;
+    }
+    .habitacion span{
+        display: none;
+    }
+    .habitacion-btn{
+        display: none;
+    }
+    .mas-info{
+        display: none;
+    }
+    .room-titule{
+        display: block;
+    }
+    .sub-titule{
+        display: block;
+    }
+    .room-desde{
+        display: block;
+    }
+    .room-precio{
+        display: block;
+    }
+}
+@media(min-width:1440px){
+    .habitaciones-grid-conteiner{
+        width: 1440px;
+    }
+}
